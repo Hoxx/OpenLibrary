@@ -1,0 +1,3 @@
+rootProject.name = "OpenLibrary"
+include ':app'
+include ':monitor'

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xx.monitor">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application>
+
+        <activity
+            android:name="com.open.monitor.permission.MemoryPermissionActivity"
+            android:theme="@style/Theme.Memory.Translation" />
+
+        <provider
+            android:name="com.open.monitor.startup.MonitorStartup"
+            android:authorities="${applicationId}.meta.monitor.startup"
+            android:exported="false" />
+
+        <service android:name="com.open.monitor.service.MonitorService" />
+    </application>
+</manifest>
